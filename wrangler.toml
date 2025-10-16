@@ -1,0 +1,23 @@
+name = "cf-workers-extractors"
+main = "src/index.js"
+compatibility_date = "2025-09-24"
+
+[vars]
+DEFAULT_TIMEOUT_MS="6000"
+ARCALIVE_ENDPOINT="https://arca.live/api/app/view/article/breaking/"
+ARCALIVE_UA="net.umanle.arca.android.playstore/0.9.75"
+
+MISSKEY_API_ENDPOINT="https://misskey.io/api/notes/show"
+NHENTAI_API_ENDPOINT="https://nhentai.net/api/gallery/"
+YANDE_ENDPOINT="https://yande.re/post.json?tags=id:"
+PAWOO_ENDPOINT="https://pawoo.net/api/v1/statuses/"
+
+[env.staging]
+name = "cf-workers-extractors-staging"
+
+[env.production]
+name = "cf-workers-extractors-prod"
+
+[[custom_domains]]
+domain = "extractor.loli.locker"
+zone_name = "loli.locker"
