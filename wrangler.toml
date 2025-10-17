@@ -6,11 +6,17 @@ compatibility_date = "2025-09-24"
 DEFAULT_TIMEOUT_MS="6000"
 ARCALIVE_ENDPOINT="https://arca.live/api/app/view/article/breaking/"
 ARCALIVE_UA="net.umanle.arca.android.playstore/0.9.75"
-
 MISSKEY_API_ENDPOINT="https://misskey.io/api/notes/show"
 NHENTAI_API_ENDPOINT="https://nhentai.net/api/gallery/"
 YANDE_ENDPOINT="https://yande.re/post.json?tags=id:"
 PAWOO_ENDPOINT="https://pawoo.net/api/v1/statuses/"
+CLIENT_ID = "MOBrBDS8blbauoSck0ZfDbtuzpyT"
+CLIENT_SECRET = "lsACyCD94FhDUtGTXi3QzcFE2uU1hqtDaKeqrdwj"
+EXHENTAI_THREADS = 20
+EXHENTAI_RETRY = 3
+EXHENTAI_DELAY = 9000
+EHENTAI_API = "https://e-hentai.org/api.php"
+EXHENTAI_API = "https://exhentai.org/api.php"
 
 [env.staging]
 name = "cf-workers-extractors-staging"
@@ -18,6 +24,6 @@ name = "cf-workers-extractors-staging"
 [env.production]
 name = "cf-workers-extractors-prod"
 
-[[custom_domains]]
-domain = "extractor.loli.locker"
-zone_name = "loli.locker"
+[[kv_namespaces]]
+binding = "PIXIV_TOKEN_KV"
+id = "df5248f796e84cc0a405c61d31e35931"

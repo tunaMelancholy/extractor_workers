@@ -10,6 +10,7 @@ import * as misskey from "./extractors/misskey.js";
 import * as nhentai from "./extractors/nhentai.js";
 import * as yandere from "./extractors/yandere.js";
 import * as pawoo from "./extractors/pawoo.js";
+import * as pixiv from "./extractors/pixiv.js";
 import { fetchJsonAsIs } from "./lib/fetch-utils.js";
 
 const EXTRACTORS = {
@@ -25,6 +26,7 @@ const EXTRACTORS = {
   nhentai,
   yandere,
   pawoo,
+  pixiv
 };
 
 export default {
