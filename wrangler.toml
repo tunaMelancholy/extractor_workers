@@ -21,9 +21,6 @@ EXHENTAI_API = "https://exhentai.org/api.php"
 [env.staging]
 name = "cf-workers-extractors-staging"
 
-[env.production]
-name = "cf-workers-extractors-prod"
-
 [[kv_namespaces]]
 binding = "PIXIV_TOKEN_KV"
 id = "df5248f796e84cc0a405c61d31e35931"
